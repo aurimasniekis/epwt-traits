@@ -42,6 +42,8 @@ trait LoggerAwareTrait
     public function emergency($message, array $context = array())
     {
         if ($this->logger) {
+            $context = $this->getLoggerContext($context);
+
             $this->logger->emergency($message, $context);
         }
     }
@@ -59,6 +61,8 @@ trait LoggerAwareTrait
     public function alert($message, array $context = array())
     {
         if ($this->logger) {
+            $context = $this->getLoggerContext($context);
+
             $this->logger->alert($message, $context);
         }
     }
@@ -75,6 +79,8 @@ trait LoggerAwareTrait
     public function critical($message, array $context = array())
     {
         if ($this->logger) {
+            $context = $this->getLoggerContext($context);
+
             $this->logger->critical($message, $context);
         }
     }
@@ -90,6 +96,8 @@ trait LoggerAwareTrait
     public function error($message, array $context = array())
     {
         if ($this->logger) {
+            $context = $this->getLoggerContext($context);
+
             $this->logger->error($message, $context);
         }
     }
@@ -107,6 +115,8 @@ trait LoggerAwareTrait
     public function warning($message, array $context = array())
     {
         if ($this->logger) {
+            $context = $this->getLoggerContext($context);
+
             $this->logger->warning($message, $context);
         }
     }
@@ -121,6 +131,8 @@ trait LoggerAwareTrait
     public function notice($message, array $context = array())
     {
         if ($this->logger) {
+            $context = $this->getLoggerContext($context);
+
             $this->logger->notice($message, $context);
         }
     }
@@ -137,6 +149,8 @@ trait LoggerAwareTrait
     public function info($message, array $context = array())
     {
         if ($this->logger) {
+            $context = $this->getLoggerContext($context);
+
             $this->logger->info($message, $context);
         }
     }
@@ -151,6 +165,8 @@ trait LoggerAwareTrait
     public function debug($message, array $context = array())
     {
         if ($this->logger) {
+            $context = $this->getLoggerContext($context);
+
             $this->logger->debug($message, $context);
         }
     }
@@ -166,7 +182,18 @@ trait LoggerAwareTrait
     public function log($level, $message, array $context = array())
     {
         if ($this->logger) {
+            $context = $this->getLoggerContext($context);
+
             $this->logger->log($level, $message, $context);
         }
+    }
+
+    /**
+     * @param array $context
+     * @return array
+     */
+    public function getLoggerContext($context)
+    {
+        return $context;
     }
 }
