@@ -1,0 +1,20 @@
+{
+    "name": "epwt/traits",
+    "description": "Bunch of useful traits",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Aurimas Niekis",
+            "email": "aurimas.niekis@gmail.com"
+        }
+    ],
+    "require": {
+        "psr/log": "~1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "EPWT\\Traits\\": ""
+        }
+    }
+}
