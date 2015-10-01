@@ -1,6 +1,7 @@
 {
     "name": "epwt/traits",
     "description": "Bunch of useful traits",
+    "keywords": ["logger", "aware", "serializer", "igbinary"],
     "type": "library",
     "license": "MIT",
     "authors": [
