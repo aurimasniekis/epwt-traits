@@ -5,7 +5,7 @@ namespace EPWT\Traits;
 /**
  * Trait SerializerTrait
  * @package EPWT\Traits
- * @author Aurimas Niekis <aurimas.niekis@gmail.com>
+ * @author Aurimas Niekis <aurimas@niekis.lt>
  */
 trait SerializerTrait
 {

@@ -7,7 +7,7 @@ use Psr\Log\LoggerInterface;
 /**
  * Trait LoggerAwareTrait
  * @package EPWT\Traits
- * @author Aurimas Niekis <aurimas.niekis@gmail.com>
+ * @author Aurimas Niekis <aurimas@niekis.lt>
  */
 trait LoggerAwareTrait
 {
